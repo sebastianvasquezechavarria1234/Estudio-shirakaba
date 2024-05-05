@@ -1,0 +1,9 @@
+---
+const { title } = Astro.props
+const { img } = Astro.props
+---
+
+<article class="w-full md:w-[33%]">
+    <img class="w-[50%] mx-auto mb-[20px] mt-[30px] lg:mb-[30px] lg:mt-[0px] sm:w-[60%]" src={title} alt="title">
+    <img class="w-full" src={img} alt="Esto pude ser una imagen">
+</article>

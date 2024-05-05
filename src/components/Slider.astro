@@ -1,0 +1,91 @@
+---
+import SliderCard from '../components/SliderCard.astro'
+---
+
+<section class="w-full h-[23vw] mt-[80px] sm:mt-[120px] overflow-hidden">
+    <ul class="slider flex gap-[20px] h-full flex-nowrap w-[500%]">
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-1.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-2.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-3.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-4.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-5.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-14.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-7.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-8.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-9.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-10.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-11.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-12.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-13.webp"
+            />
+        </li>
+        <li class="h-full">
+            <SliderCard
+            img="../src/img/slider-14.webp"
+            />
+        </li>
+    </ul>
+</section>
+
+<style>
+    .slider{
+        animation: slider 60s infinite linear alternate;
+        transform: translateX(20px);
+    }
+    @keyframes slider {
+        100%{
+            transform: translateX(-77%)
+        }
+        
+    }
+</style>

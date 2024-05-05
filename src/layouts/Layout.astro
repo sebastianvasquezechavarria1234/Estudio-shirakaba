@@ -1,0 +1,90 @@
+---
+interface Props {
+	title: string;
+}
+
+import { ViewTransitions } from 'astro:transitions';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Micro+5+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<!-- FONT P -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--white: #fbfaf8;
+        --black: #2e2a25;
+        --grey: #757575;
+        --beig: #e5e1d7;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Poiret One", sans-serif;
+		text-decoration: none !important;
+        list-style: none;	
+}
+	body{
+		background-color: var(--beig);
+		color:var(--black);
+	}
+	h1,
+	h2,
+	h3{
+		font-family: "Abril Fatface", serif;
+	}
+	h3,
+	h2{
+		font-size: 5rem;
+		font-weight: 100;
+		line-height: 65px;
+	}
+	h4{
+		opacity: .7;
+		font-size: 2.4rem;
+		font-weight: 600;
+	}
+	p,
+	a{
+		font-size: 19px;
+		opacity: .8;
+		color: currentColor;
+	}
+	@media screen and (max-width: 600px){
+		h2{
+			font-size: 1.4rem;
+		}
+		h3{
+			font-size: 1.5rem;
+		}
+		h4{
+			font-size: 23px;
+		}
+		a,
+		p{
+			font-size: 16px;
+		}
+		
+	}
+</style>

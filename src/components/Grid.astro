@@ -1,0 +1,37 @@
+---
+import GridCard from "./GridCard.astro";
+---
+
+<section class="px-[20px] mt-[120px] lg:px-[40px] sm:mt-[220px]">
+    <div class="flex-colums md:flex gap-[20px]">
+        <GridCard
+        title="../src/img/grid-tt-1.webp"
+        img="../src/img/grid-1.webp" 
+        />
+        <GridCard
+        title="../src/img/grid-tt-2.webp"
+        img="../src/img/grid-2.webp" 
+        />
+        <GridCard
+        title="../src/img/grid-tt-3.webp"
+        img="../src/img/grid-3.webp" 
+        />
+    </div>
+    <picture class="w-full">
+        <img class="w-full mt-[-20px] sm:mt-[40px]" src="../src/img/grid-4.webp" alt="Esto puede ser una imagen">
+    </picture>
+    <a class="uppercase flex items-center gap-[30px] duration-200 mt-[40px] sm:mt-[80px]" href="/estudio"><img src="../src/img/icon-arrow.svg" alt="icon"><h2>view the house</h2></a>
+</section>
+
+<style>
+    a:hover{
+        transform: translateX(50px);
+        text-overflow: ellipsis;
+    }
+    @media screen and (max-width: 600px){
+        a{
+            font-size: 1rem !important;
+        }
+        
+    }
+</style>

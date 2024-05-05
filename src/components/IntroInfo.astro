@@ -1,0 +1,21 @@
+---
+
+const { info1 } = Astro.props
+const { info2 } = Astro.props
+const { info3 } = Astro.props
+const { info4 } = Astro.props
+
+---
+
+<div class="columns-1 items-center py-2 justify-between md:flex">
+    <p class="w-[100%] py-[4px] md:w-[30%] md:py-[0px]">{info1}</p>
+    <p class="w-[100%] py-[4px] md:w-[40%] md:py-[0px]">{info2}</p>
+    <p class="w-[100%] py-[4px] md:w-[30%] md:py-[0px]">{info3}</p>
+    <p class="w-[100%] py-[4px] md:w-[10%] md:py-[0px]">{info4}</p>
+</div>
+
+<style>
+    p{
+        font-weight: bold;
+    }
+</style>
